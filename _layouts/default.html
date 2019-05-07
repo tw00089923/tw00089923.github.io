@@ -4,9 +4,14 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
+    {% include links.html %}
   </head>
   <body>
-    {% include navigation.html %}
-    {{ content }}
+    <div class="wrap">
+        {% include navigation.html %}
+        {{ content }}
+    </div>
+    
   </body>
+  {% include footer.html %}
 </html>
